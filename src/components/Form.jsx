@@ -1,41 +1,38 @@
-import React from "react";
+import React from 'react'
+import { Formik, Field, Form } from 'formik'
 import './Form.css'
 
-function Form() {
+const inputStyle = {
+  width: "100%",
+  margin: "10px 0",
+  padding: "10px",
+}
+
+const Book = () => {
   return (
-    <div className="form-container">
-      <div className="form-content">
-        <div className="form-subtitle">Please fill in the form below to book a seat.</div>
-        <div className="form-group">
-          <label>Name</label>
-          <input type="text" className="form-control" placeholder="Enter your name" />
-        </div>
-        <div className="form-group">
-          <label>Email</label>
-          <input type="email" className="form-control" placeholder="Enter your email" />
-        </div>
-        <div className="form-group">
-          <label>Phone</label>
-          <input type="text" className="form-control" placeholder="Enter your phone number" />
-        </div>
-        <div className="form-group">
-          <label>Company</label>
-          <input type="text" className="form-control" placeholder="Enter your company" />
-        </div>
-        <div className="form-group">
-          <label>Position</label>
-          <input type="text" className="form-control" placeholder="Enter your position" />
-        </div>
-        <div className="form-group">
-          <label>Message</label>
-          <textarea className="form-control" rows="3" placeholder="Enter your message" />
-        </div>
-        <div className="form-group">
-          <button type="submit" className="btn btn-primary">Submit</button>
-        </div>
-      </div>
+    <div className="book">
+      <h1>Book A Seat</h1>
+      <Formik
+        initialValues={{ name: "", email: "", department: "", college: "", level: "", telephone: "" }}
+        onSubmit={async (values) => {
+          alert(values.name, values.email)
+        }}
+      >
+        {({ values, errors, handleChange, handleSubmit }) => (
+
+          <form onSubmit={handleSubmit}>
+            <Field style={inputStyle} name='name' type='text' onChange={handleChange} value={values.name} placeholder="Your Full Name*" />
+            <Field style={inputStyle} name='email' type='email' onChange={handleChange} value={values.email} placeholder="Your Email*" />
+            <Field style={inputStyle} name='department' type='text' onChange={handleChange} value={values.department} placeholder="Your Department*" />
+            <Field style={inputStyle} name='email' type='email' onChange={handleChange} value={values.email} />
+            <Field style={inputStyle} name='email' type='email' onChange={handleChange} value={values.email} />
+            <Field style={inputStyle} name='email' type='tel' onChange={handleChange} value={values.telephone} placeholder="Your Telephone*" />
+            <button type='submit' style={{ padding: "10px 5px" }}>Submit</button>
+          </form>
+        )}
+      </Formik>
     </div>
   )
 }
 
-export default Form
+export default Book

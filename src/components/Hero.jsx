@@ -1,12 +1,14 @@
 import React from 'react'
 import { useState } from "react";
 import './Hero.css'
-import Form from './Form'
+import Modal from './Modal';
+import Social from './Social'
 
 const Hero = () => {
-  // const [visible, setVisible] = useState(false)
+  const [visible, setVisible] = useState(false)
   return (
     <section className="home" id='home'>
+      
       <div className="video-container">
         <video src="assets/videos/tech.mp4" autoPlay muted id="video-bg"></video>
       </div>
@@ -18,26 +20,12 @@ const Hero = () => {
           <center style={{ display: "flex", justifyContent: "space-between", width: "50%" }}><a href="#about" className='tlink'>Learn More &gt;</a>
             <a href="#video" className='tlink'>Watch Video &gt;</a>
           </center>
-          <center><a className='btn' href='#'>Book A Seat</a></center>
+          <center><a className='btn' href='#' onClick={() => setVisible(true)}>Book A Seat</a></center>
         </div>
+        <Social />
       </div>
-      {/* <div className="modal-wrapper">
-        <div className="modal-container">
-          <div className="modal-content">
-            <div className="modal-header">
-              <span className="close" onClick={() => {
-                document.getElementById('modal-12').style.display = 'none'
-              }
-              }>&times;</span>
-              <h2>Join Us</h2>
-            </div>
-            <div className="modal-body">
-              <Form />
-            </div>
-          </div>
-        </div>
-      </div> */}
-
+     
+      <Modal visible={visible} setVisible={setVisible} />
     </section>
   )
 }

@@ -1,82 +1,33 @@
-.about .title::after {
-    content: '';
-
-
+.title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: "Poppins";
 }
 
-.about .about-content .left {
-    width: 45%
-}
-
-.about .about-content .left img {
-    height: 400px;
-    width: 400px;
-    object-fit: cover;
-    border-radius: 50%;
-    transition: all 0.2s linear;
-
-}
-
-.about .about-content .left img:hover {
-    transform: scale(1.1);
-}
-
-.about .about-content .left {
-    width: 45%;
-}
-
-.about .about-content .right {
-    width: 55%;
-}
-
-.about .about-content .right .text {
+.text {
+    position: relative;
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
+    font-family: 'Poppins';
+    text-align: center;
 }
-
-.about .about-content .right span {
+.hang{
     color: var(--color);
 }
 
-.about .about-content .right p {
+.about-content {
+    position: relative;
+    align-items: center;
     text-align: justify;
-
+    font-family: 'Poppins';
 }
 
-.about .about-content .right a.btn {
-    display: inline-block;
-    background: var(--color);
-    color: #fff;
-    font-size: 20px;
-    padding: 1px 30px;
-    margin-top: 20px;
-    font-weight: 500;
-    font-weight: 400;
-    border-radius: 6px;
-    border: 2px solid var(--color);
-    transition: all 0.4s ease;
-}
-
-.about .about-content .right a:hover {
-
-    transform: scale(1.05);
-    color: var(--color);
-    background: none;
-}
-
-.about .about-content .column {
-    width: 50%;
-}
-
-.about .about-content .right a.bu {
-    color: #111;
-    margin: 0px;
-    font-style: italic;
-
-}
-
-.about .about-content .right a.bu:hover {
-    text-decoration: underline;
-
+p{
+    margin: auto;
+    width: 60%;
 }
