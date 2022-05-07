@@ -10,7 +10,7 @@ const Card = () => {
                 return (
                     <div key={i} className="speaker__card">
                         <div className="speaker_img__container">
-                            <img src={p.image} />
+                            <img src={p.image} alt='img' />
                         </div>
                         <div className="speaker__content">
                             <div className='speaker_name'>

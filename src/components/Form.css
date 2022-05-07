@@ -18,12 +18,6 @@
     transition: all 0.3s ease-in-out;
     margin-bottom: 1em;
     font-family: 'Poppins';
-
-    &:focus {
-        border-color: var(--color);
-        box-shadow: 0 0 0 2px var(--color);
-        outline: none;
-    }
 }
 
 
