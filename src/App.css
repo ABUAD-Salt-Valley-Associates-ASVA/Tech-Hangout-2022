@@ -11,6 +11,7 @@ section#home {
     padding: 0px;
 }
 
+
 @media screen and (max-width: 600px) {
     section {
         padding: 20px 0;

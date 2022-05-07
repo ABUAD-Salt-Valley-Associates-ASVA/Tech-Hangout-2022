@@ -16,7 +16,9 @@ const About = () => {
             TECH <span className='hang'>HANGOUT '22</span>
           </div>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae volutpat dui. Donec pharetra magna id tortor euismod sagittis. Maecenas accumsan tellus at mollis dictum. Pellentesque ornare efficitur dapibus. Cras et tellus turpis. Sed rutrum, mi sit amet ultricies commodo, dolor lacus imperdiet enim, non hendrerit augue ex vitae purus. Praesent sit amet blandit ex. Nulla porta elit eget commodo vulputate. Donec eget augue dictum, euismod est ac, sodales tortor. Suspendisse a fringilla tortor. Proin vestibulum elementum dui. Aliquam lacinia eget erat et sollicitudin. Vestibulum eu lorem vel quam pharetra dignissim eget sed augue. Aliquam mauris metus, commodo consectetur congue sit amet, suscipit id sapien. Nunc hendrerit, erat at tincidunt fringilla, urna magna hendrerit ante, et viverra enim felis vel mi.
+            We started in the year 2021 to teach individuals the latest in the technological space with the use of <a className="tlink"> 3D PRINTING </a> to <a className="tlink"> MICROCONTROLLER programming</a> and connect them with individuals deeply rooted in the industry.
+            This year 2022, we improve as the technology changes and call on tech experts, amateurs and novices aiming to build a network amongst
+            individuals who want to improve themselves in the industry with full expression without prejudice.<br /><br /> This year will have a lot planned for you, from a <a className="tlink">HACKATHON</a> to Project Exhibition to Lectures that will BLOW YOUR MIND and GIVEAWAYS. All you have to do is BOOK A SEAT, COME WITH AN OPEN MIND and watch how your world completely changed for the best.
           </p>
           <center><a className='btn' href='#' onClick={() => setVisible(true)}>Book A Seat</a></center>
         </div>

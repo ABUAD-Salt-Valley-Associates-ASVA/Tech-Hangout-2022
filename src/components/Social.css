@@ -9,8 +9,13 @@
     color: var(--color);
     top: 50%;
     z-index: 1000;
+    transition: all .5s ease;
+    opacity: 1;
 }
 
+.header__socials.hidden {
+    opacity: 0;
+}
 
 .header__socials a:hover {
     cursor: pointer;

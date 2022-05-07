@@ -1,0 +1,155 @@
+.contact {
+    color: #fff;
+    width: 60%;
+    margin: auto;
+}
+
+.contact .title::before {
+    background: #fff;
+    width: 240px;
+}
+
+.contact .title::after {
+    content: "";
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 3px);
+}
+
+.contact .contact-content {
+    display: flex;
+    padding: 20px;
+}
+
+.contact .contact-content .text {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 55px;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row svg {
+    transition: 0.3s all ease;
+    font-size: 25px;
+    color: var(--color);
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: white;
+    font-weight: 200;
+}
+
+.contact .contact-content .info a {
+    font-style: italic;
+}
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .field,
+.contact .right form .fields .field {
+    height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.contact .right form .field input,
+.contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--color);
+    border-radius: 4px;
+    outline: none;
+    padding: 0 10px;
+    font-size: 17px;
+    font-family: 'roboto';
+}
+
+.contact .right form .textarea textarea {
+    resize: none;
+    padding-top: 10px;
+
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 100%;
+
+}
+
+.contact .right form .button button {
+    height: 100%;
+    width: 170px;
+    border: 2px var(--color) solid;
+    background: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s all ease;
+    cursor: pointer;
+
+}
+
+.contact .right form .button button:hover {
+    background: var(--color);
+    transform: scale(1.05);
+}
+
+.contact .contact-content .row svg:hover {
+
+    transform: scale(1.5);
+}
+
+.contact .right form .name {
+    margin-right: 10px;
+}
+
+.contact .right form .email {
+    margin-left: 10px;
+}
+
+.contact .right form .textarea {
+    height: 100px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+
+    .contact-content {
+        flex-direction: column;
+    }
+
+    .contact .contact-content .column {
+        width: 100%;
+    }
+
+    .contact .contact-content .column:last-child {
+        margin-top: 40px;
+    }
+}

@@ -27,6 +27,20 @@
     font-family: 'Poppins';
 }
 
+a.tlink {
+    display: inline-block;
+    color: var(--color);
+    font-size: 19px;
+    /* margin-top: 20px; */
+    font-weight: 400;
+    transition: all 0.4s ease;
+}
+
+a.tlink:hover {
+    color: #fff;
+    transform: scale(1);
+}
+
 p {
     margin: auto;
     width: 60%;

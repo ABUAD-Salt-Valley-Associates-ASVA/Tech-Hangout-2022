@@ -1,0 +1,53 @@
+.gridcontainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 2em;
+    width: 60%;
+    margin: auto;
+    overflow-x: scroll;
+}
+
+.gridcontainer::-webkit-scrollbar {
+    display: none;
+}
+
+.speaker__card {
+    background: #000;
+    box-shadow: 2px 1px 5px var(--color);
+    border-radius: 2rem;
+    width: 30%;
+    text-align: center;
+    min-width: 200px;
+    overflow: hidden;
+    max-width: 400px;
+}
+
+
+.speaker_img__container {
+    position: relative;
+    width: "100%";
+    min-height: 300px;
+}
+
+.speaker_img__container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.speaker__content {
+    margin-top: 10px;
+    padding: 30px;
+}
+
+.speaker_name {
+    font-family: 'Poppins';
+    font-size: 25px;
+    color: var(--color);
+}
+
+@media screen {}

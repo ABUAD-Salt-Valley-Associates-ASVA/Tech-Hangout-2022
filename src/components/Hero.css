@@ -18,6 +18,12 @@
     top: 0px;
 }
 
+.logo :hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
 .video-container video {
     position: absolute;
     top: 0;
@@ -192,8 +198,7 @@ modal-wrapper {
         background: none;
         width: 100%;
         height: 100%;
-        opacity: 100;
-        animation: none;
+
     }
 
     .home-content {
