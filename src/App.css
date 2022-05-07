@@ -10,3 +10,13 @@ section#home {
     height: 100vh;
     padding: 0px;
 }
+
+@media screen and (max-width: 600px) {
+    section {
+        padding: 20px 0;
+    }
+
+    section#home {
+        height: 100%;
+    }
+}

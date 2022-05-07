@@ -163,17 +163,33 @@ modal-wrapper {
     }
 
     a.tlink {
-        font-size: 15px;
+        font-size: 13px;
 
+
+    }
+
+    .video-container {
+        width: 100%;
+        height: 100%;
     }
 
     .video-container video {
         height: 30%;
+        width: 100%;
     }
 
     .home-container {
         background: none;
+        width: 100%;
+        height: 100%;
+        opacity: 100;
+        animation: none;
     }
+
+    .home-content {
+        margin-top: 60%;
+    }
+
 }
 
 @keyframes slideUp {
