@@ -11,4 +11,8 @@
     .speakers__title {
         font-size: 30px;
     }
+
+    .gridcontainer {
+        width: none;
+    }
 }

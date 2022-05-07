@@ -50,4 +50,13 @@
     color: var(--color);
 }
 
-@media screen {}
+@media screen and (max-width: 600px) {
+    .gridcontainer {
+        width: 100%;
+    }
+
+    .speaker__card {
+        width: 100%;
+    }
+
+}

@@ -93,13 +93,11 @@
 .contact .right form .textarea textarea {
     resize: none;
     padding-top: 10px;
-
 }
 
 .contact .right form .button {
     height: 47px;
     width: 100%;
-
 }
 
 .contact .right form .button button {
@@ -122,7 +120,6 @@
 }
 
 .contact .contact-content .row svg:hover {
-
     transform: scale(1.5);
 }
 
@@ -140,9 +137,15 @@
 }
 
 @media screen and (max-width: 768px) {
+    .contact {
+        width: 100%;
+    }
 
     .contact-content {
         flex-direction: column;
+        display: flex;
+        padding: 0px;
+        width: 100%;
     }
 
     .contact .contact-content .column {

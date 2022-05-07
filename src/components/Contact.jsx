@@ -42,11 +42,36 @@ const Contact = () => {
             <div className='max-width'>
                 <h2 className='title'>Contact</h2>
                 <div className='contact-content'>
+
+                    <div className='column right'>
+                        <ScrollAnimation animateIn='flipInY'>
+                            <div className='text'>Send a Message</div>
+                            <form id='contact-form' onSubmit={sendEmail} netlify>
+                                <div className='fields'>
+                                    <div className='field name'>
+                                        <input type='text' placeholder='Name' name='name' required></input>
+                                    </div>
+                                    <div className='field email'>
+                                        <input type='email' placeholder='Email' name='email' required></input>
+                                    </div>
+                                </div>
+
+                                <div className='field subject'>
+                                    <input type='text' placeholder='Subject' name='subject' required></input>
+                                </div>
+                                <div className='field textarea'>
+                                    <textarea cols='40' rows='15' placeholder='Message...' name='message' required></textarea>
+                                </div>
+                                <div className='button'>
+                                    <button type='submit'>Send Message</button>
+                                </div>
+                            </form>
+                        </ScrollAnimation>
+                    </div>
                     <div className='column left'>
                         <div className='text'>
                             Get In Touch
                         </div>
-                        <p>Feel free to contact us</p>
                         <div className='icons'>
                             <ScrollAnimation animateIn='bounceInLeft' delay={100} >
                                 <div className='row'>
@@ -95,37 +120,9 @@ const Contact = () => {
                             </ScrollAnimation >
                         </div>
                     </div>
-                    <div className='column right'>
-                        <ScrollAnimation animateIn='flipInY'>
-                            <div className='text'>Send a Message</div>
-                            <form id='contact-form' onSubmit={sendEmail} netlify>
-                                <div className='fields'>
-                                    <div className='field name'>
-                                        <input type='text' placeholder='Name' name='name' required></input>
-                                    </div>
-                                    <div className='field email'>
-                                        <input type='email' placeholder='Email' name='email' required></input>
-                                    </div>
-                                </div>
-
-                                <div className='field subject'>
-                                    <input type='text' placeholder='Subject' name='subject' required></input>
-                                </div>
-                                <div className='field textarea'>
-                                    <textarea cols='40' rows='15' placeholder='Message...' name='message' required></textarea>
-                                </div>
-                                <div className='button'>
-                                    <button type='submit'>Send Message</button>
-                                </div>
-                            </form>
-                        </ScrollAnimation>
-                    </div>
-
-
                 </div>
             </div>
         </section>
     )
 }
-
 export default Contact
