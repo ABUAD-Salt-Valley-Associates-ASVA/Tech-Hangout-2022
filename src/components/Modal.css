@@ -57,4 +57,9 @@
     .card {
         width: 90%;
     }
+
+    .modal__close {
+        top: 30px;
+        transform: scale(0.8);
+    }
 }

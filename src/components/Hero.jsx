@@ -8,7 +8,13 @@ const Hero = () => {
   const [visible, setVisible] = useState(false)
   return (
     <section className="home" id='home'>
-      
+      <div className='logo'>
+        <a href="#">
+          <span>
+            <img src={require('./../assets/images/logo192.png')} alt='logo' />
+          </span>
+        </a>
+      </div>
       <div className="video-container">
         <video src="assets/videos/tech.mp4" autoPlay muted id="video-bg"></video>
       </div>
@@ -24,7 +30,7 @@ const Hero = () => {
         </div>
         <Social />
       </div>
-     
+
       <Modal visible={visible} setVisible={setVisible} />
     </section>
   )

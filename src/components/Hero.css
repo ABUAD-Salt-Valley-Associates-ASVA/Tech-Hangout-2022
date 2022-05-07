@@ -8,6 +8,16 @@
     left: 0;
 }
 
+.logo {
+    margin: auto auto;
+    display: block;
+    padding: 20px;
+    z-index: 2;
+    display: flex;
+    align-self: left;
+    top: 0px;
+}
+
 .video-container video {
     position: absolute;
     top: 0;
