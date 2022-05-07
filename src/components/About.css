@@ -54,5 +54,6 @@ p {
     p {
         margin: auto;
         width: 90%;
+        transform: scale(0.9);
     }
 }

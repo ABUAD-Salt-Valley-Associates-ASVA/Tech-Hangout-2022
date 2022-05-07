@@ -202,7 +202,9 @@ modal-wrapper {
     }
 
     .home-content {
-        margin-top: 60%;
+        margin-top: 35%;
+        transform: scale(0.8);
+        display: flex;
     }
 
 }
