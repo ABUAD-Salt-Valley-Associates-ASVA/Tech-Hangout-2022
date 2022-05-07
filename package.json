@@ -19,7 +19,9 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.3.1",
     "react-scripts": "5.0.1",
+    "react-scrollspy": "^3.4.3",
     "react-svg-inline": "^2.1.1",
+    "react-ui-scrollspy": "^2.1.0",
     "scrollanimation": "^1.0.1",
     "sweetalert": "^2.1.2",
     "web-vitals": "^2.1.4"

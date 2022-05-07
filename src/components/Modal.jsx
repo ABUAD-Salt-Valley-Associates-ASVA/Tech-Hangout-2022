@@ -8,7 +8,7 @@ const Modal = ({ visible, setVisible }) => {
         <>
             {visible && (
                 <div className="modal">
-                    <div class="modal__close" onClick={() => setVisible(false)}>
+                    <div className="modal__close" onClick={() => setVisible(false)}>
                         <span></span>
                         <span></span>
                     </div>

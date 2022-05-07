@@ -1,4 +1,4 @@
-.header__socials{
+.header__socials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,13 +6,21 @@
     /* position: absolute; */
     left: 3rem;
     position: fixed;
-    color:var(--color);
-    top: 40%;
+    color: var(--color);
+    top: 50%;
     z-index: 1000;
 }
 
+
+.header__socials a:hover {
+    cursor: pointer;
+    transform: translateY(-5px) scale(1.1);
+    transition: all 0.2s ease-in-out;
+    --color: #fff;
+}
+
 @media screen and (max-width: 600px) {
-    .header__socials{
+    .header__socials {
         display: none;
     }
 }

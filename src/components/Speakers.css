@@ -1,0 +1,14 @@
+.speakers__title {
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-family: "Poppins";
+}
+
+@media screen and (max-width: 600px) {
+    .speakers__title {
+        font-size: 30px;
+    }
+}

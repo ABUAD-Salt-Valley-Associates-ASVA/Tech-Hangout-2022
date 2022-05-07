@@ -152,6 +152,30 @@ modal-wrapper {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 600px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3 {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    a.tlink {
+        font-size: 15px;
+
+    }
+
+    .video-container video {
+        height: 30%;
+    }
+
+    .home-container {
+        background: none;
+    }
+}
+
 @keyframes slideUp {
     0% {
         opacity: 0;

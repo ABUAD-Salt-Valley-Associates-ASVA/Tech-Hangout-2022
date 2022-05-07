@@ -20,17 +20,20 @@
     padding: 3em;
     color: #000;
     border-radius: 1em;
+    width: 500px;
+    height: auto;
 }
+
 .modal__close {
-  position: absolute;
-  top: 100px;
-  right: 50px;
-  color: #585858;
-  width: 50px;
-  height: 25px;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    color: #585858;
+    width: 50px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
 }
 
 .modal__close span {
@@ -48,4 +51,10 @@
 .modal__close span:last-child {
     transform: rotate(-45deg);
     transform-origin: center;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
 }
