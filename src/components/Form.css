@@ -1,10 +1,29 @@
 .form_input {
     border-color: var(--color);
     color: inherit;
-    border-radius: 1rem;
+    border-radius: 1em;
     background-color: transparent;
     border-image: none;
     border-style: solid;
+    border-width: 1px;
+    padding: 0.5em;
+    font-size: 1em;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color);
+    width: 100%;
+    height: 100%;
+    outline: none;
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 1em;
+    font-family: 'Poppins';
+
+    &:focus {
+        border-color: var(--color);
+        box-shadow: 0 0 0 2px var(--color);
+        outline: none;
+    }
 }
 
 
