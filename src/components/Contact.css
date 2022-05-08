@@ -20,6 +20,7 @@
 .contact .contact-content {
     display: flex;
     padding: 20px;
+    flex-direction: row-reverse;
 }
 
 .contact .contact-content .text {
@@ -141,11 +142,12 @@
         width: 100%;
     }
 
-    .contact-content {
+    .contact .contact-content {
         flex-direction: column;
         display: flex;
         padding: 0px;
-        width: 100%;
+        width: 70%;
+        margin: auto;
     }
 
     .contact .contact-content .column {

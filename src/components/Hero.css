@@ -190,21 +190,23 @@ modal-wrapper {
     }
 
     .video-container video {
-        height: 30%;
+
         width: 100%;
     }
 
     .home-container {
-        background: none;
         width: 100%;
         height: 100%;
 
     }
 
     .home-content {
-        margin-top: 35%;
         transform: scale(0.8);
         display: flex;
+    }
+
+    .logo {
+        display: none;
     }
 
 }

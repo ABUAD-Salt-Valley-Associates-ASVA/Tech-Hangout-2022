@@ -2,20 +2,22 @@ import React from 'react'
 import './nav.css'
 import { AiOutlineHome, AiOutlineInfoCircle } from 'react-icons/ai'
 import { MdOutlineMessage } from 'react-icons/md'
-import { IoMdMicrophone } from 'react-icons/io'
+import { GiPublicSpeaker } from 'react-icons/gi'
 import { FaLaptopCode } from 'react-icons/fa'
 import { useState } from 'react'
+import Scrollspy from "react-scrollspy";
 
 const Nav = () => {
     const [activeNav, setActiveNav] = useState('#')
     return (
-        <nav>
-            <a data-to-scrollspy-id='home' href="#home" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ' '}><AiOutlineHome /></a>
-            <a data-to-scrollspy-id='about' href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ' '}><AiOutlineInfoCircle /></a>
-            <a data-to-scrollspy-id='speakers' href="#speakers" onClick={() => setActiveNav('#speakers')} className={activeNav === '#speakers' ? 'active' : ' '}><IoMdMicrophone /></a>
-            <a data-to-scrollspy-id='amh' href="#amh" onClick={() => setActiveNav('#amh')} className={activeNav === '#amh' ? 'active' : ' '}><FaLaptopCode /></a>
+        <Scrollspy items={['home', 'about', 'speakers', 'amh', 'contact']} componentTag="nav" currentClassName="active">
+            <a href="#home" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ' '}><AiOutlineHome /></a>
+            <a href="#about" onClick={() => setActiveNav('#about')} className={activeNav === '#about' ? 'active' : ' '}><AiOutlineInfoCircle /></a>
+            <a href="#speakers" onClick={() => setActiveNav('#speakers')} className={activeNav === '#speakers' ? 'active' : ' '}><GiPublicSpeaker /></a>
+            <a href="#amh" onClick={() => setActiveNav('#amh')} className={activeNav === '#amh' ? 'active' : ' '}><FaLaptopCode /></a>
             <a data-to-scrollspy-id='contact' href="#contact" onClick={() => setActiveNav('#contact')} className={activeNav === '#contact' ? 'active' : ' '}><MdOutlineMessage /></a>
-        </nav>
+        </Scrollspy>
+
     )
 }
 

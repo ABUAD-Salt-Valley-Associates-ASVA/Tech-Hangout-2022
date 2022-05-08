@@ -1,3 +1,12 @@
+.title {
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    font-family: "Poppins";
+}
+
 .gridcontainer {
     display: flex;
     justify-content: space-between;
@@ -12,32 +21,31 @@
     display: none;
 }
 
-.speaker__card {
+.sponsor__card {
+    /* transform: scale(0.5); */
     background: #000;
     box-shadow: 2px 1px 5px var(--color);
     border-radius: 2rem;
     width: 50%;
-    text-align: center;
-    min-width: 300px;
+    min-width: 200px;
     overflow: hidden;
     max-width: 400px;
     transition: all 0.2s ease-in-out;
 }
 
-.speaker__card:hover {
+.sponsor__card:hover {
     box-shadow: 2px 1px 5px #fff;
     transform: scale(1.05);
-
 }
 
 
-.speaker_img__container {
+.sponsor_img__container {
     position: relative;
     width: "100%";
-    min-height: 300px;
+    min-height: 200px;
 }
 
-.speaker_img__container img {
+.sponsor_img__container img {
     position: absolute;
     left: 0;
     top: 0;
@@ -46,29 +54,17 @@
     object-fit: cover;
 }
 
-.speaker__content {
-    margin-top: 10px;
-    padding: 30px;
-}
-
-.speaker_name {
-    font-family: 'Poppins';
-    font-size: 25px;
-    color: var(--color);
-}
-
-.card-info {
-    color: #fff;
-    font-family: 'poppins';
-}
-
 @media screen and (max-width: 600px) {
     .gridcontainer {
         width: 100%;
     }
 
-    .speaker__card {
-        width: 100%;
+    .sponsor_img__container {
+        min-height: 100px;
     }
 
+    .sponsor__card {
+        min-width: 100px;
+        max-width: 100px;
+    }
 }

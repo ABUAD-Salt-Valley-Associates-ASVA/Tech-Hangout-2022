@@ -9,6 +9,7 @@ section {
 section#home {
     height: 100vh;
     padding: 0px;
+    position: relative;
 }
 
 
