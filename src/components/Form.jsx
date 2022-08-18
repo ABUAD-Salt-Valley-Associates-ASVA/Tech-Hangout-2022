@@ -16,7 +16,7 @@ const Book = () => {
       <Formik
         initialValues={{ name: "", email: "", department: "", college: "", level: "", telephone: "" }}
         onSubmit={async (values, { resetForm, setSubmitting }) => {
-          await axios.post('https://sheet.best/api/sheets/f9b63b5f-e80f-4031-bcaa-e11cd1402b46', values).then((res) => { console.log(res) }).catch((error) => { console.log(error.message) })
+          await axios.post('', values).then((res) => { console.log(res) }).catch((error) => { console.log(error.message) })
           resetForm({ values: "" })
           setSubmitting(false);
         }}
